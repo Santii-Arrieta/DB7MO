@@ -30,7 +30,7 @@ CREATE INDEX idx_address_postal_code ON address(postal_code);
 
 
 
--- DESPUÉS DEL ÍNDICE
+-- Despues del indice
 SELECT a.address, a.postal_code, c.city, co.country
 FROM address a
 INNER JOIN city c USING(city_id)
